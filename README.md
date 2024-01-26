@@ -13,6 +13,5 @@ A simple card app made in React, using Vite to set up.
 - Other card types
 
 # Card image sources
-Playing cards: http://code.google.com/p/vector-playing-cards/
-
+Playing cards: http://code.google.com/p/vector-playing-cards/\
 Card back: https://commons.wikimedia.org/wiki/File:Card_back_01.svg
