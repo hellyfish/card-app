@@ -21,6 +21,16 @@
   font-size: 125%;
 }
 
-.card-container > img {
-  width: 200px;
+.card-container img {
+  width: 250px;
+  height: 350px;
+  aspect-ratio: 2.5 / 3.5;
+}
+
+.hand {
+  border: 1px solid gray;
+  height: 15rem;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
 }
