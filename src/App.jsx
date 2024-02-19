@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Card from './components/Card.jsx';
 import Hand from './components/Hand.jsx';
+import { cardData } from './assets/cardData.js';
 import {DndContext, useSensors, useSensor, PointerSensor} from '@dnd-kit/core';
 
 function App() {
@@ -36,13 +37,17 @@ function App() {
     setParent(over ? over.id : null);
   }
 
+  const cardDisplayArea = (
+    <div>
+      {card}
+      <p>Your card is {cardData.cards[cardId].value} of {cardData.cards[cardId].suit}</p>
+    </div>
+  )
+
   return (
     <DndContext onDragEnd={handleDragEnd} sensors={sensors}>
       <h1>Card App</h1>
-      <div>
-        {parent === null ? card : null}
-        {/* <p>Your card is {cardObject.value} of {cardObject.suit}!</p> */}
-      </div>
+      {parent === null && cardDisplayArea}
       <button onClick={drawCard}>Get new card</button>
       <Hand id="hand" cardNo={cardId}>
         {parent === "hand" ? card : <h1>Drop card here</h1>}
