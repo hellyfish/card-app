@@ -13,7 +13,7 @@ export default function Hand(props) {
 
     return (
         <div className="hand" ref={setNodeRef} style={styles}>
-            Hand
+            <h2>Hand</h2>
             {props.children}
         </div>
     )
