@@ -40,7 +40,7 @@ function App() {
   const cardDisplayArea = (
     <div>
       {card}
-      <p>Your card is {cardData.cards[cardId].value} of {cardData.cards[cardId].suit}</p>
+      <p>Your card is the <b>{cardData.cards[cardId].text}</b>!</p>
     </div>
   )
 

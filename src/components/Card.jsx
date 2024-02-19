@@ -28,7 +28,7 @@ export default function Card(props) {
                 <img
                     src={`/card-png/${cardObject.id}.png`}
                     onClick={flipCard}
-                    alt={`${cardObject.value} of ${cardObject.suit}`}
+                    alt={cardObject.text}
                     className="card-img front" />
                 <img
                     src="/card-backs/red.png"
