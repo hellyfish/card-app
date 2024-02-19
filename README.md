@@ -5,6 +5,7 @@ A simple card app made in React, using Vite to set up.
 - Display a card
 - Generate random card
 - Flipping card (showing front and back)
+- Drag and drop cards
 
 # To-do list
 - Deck functionality
